@@ -23,7 +23,7 @@ function Wortschatz(){
       chrome.storage.local.get(null, function(items) {
          lastSet = new Date(items['last_set']);
 
-         if(now - lastSet > 30000){
+         if(now - lastSet > 300000){
             word = that.pickRandom();
             that.current = word;
          } else{
@@ -81,4 +81,4 @@ File.open("wortschatz.js", "w") do |file|
 	end
 end
 
-`cp wortschatz.js ../wortschatz_extension`
+`mv wortschatz.js ../wortschatz_extension`
