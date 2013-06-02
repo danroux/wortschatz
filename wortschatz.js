@@ -1,23 +1,59 @@
-// Created at 27. May, 01:02 Uhr
+// Created at 02. June, 22:47 Uhr
 //
-// * adjektiven. Kapitel 13, small fixes. * added verben file.
-// b80d26c265a77261e810e4ab0b3d30f0eef029b9
+// * Added the import script, to collect the most recent vocabulary words and to move it to the extension folder to keep them in sync as much as possible. * Commited the wortschatz that i currently use in my cli.
+// 31d0409a5a21b4d57de8739fc304f8e071c755f7
 //
-var Wortschatz = {
-	current: function(){
-		words = this.words;
-		var selected = words[Math.floor(Math.random()*words.length)];
-		return selected;
-	},
-	clearUp: function(){
-		var previousElement = document.getElementById('vocabulary_ordinary_id');
-		if(previousElement){
-			previousElement.parentNode.removeChild(previousElement);
-		}
-	}
+function Wortschatz(){
+   this.pickRandom = function(){
+      var selected = this.words[Math.floor(Math.random()*this.words.length)];
+      selected = selected.split(";").join(" | ");
+      return selected;
+   };
+
+   this.__defineGetter__("current", function(){
+      var now = new Date();
+      var word;
+      var lastSetExt;
+      var div = document.createElement("div");
+      div.id = "vocabulary_ordinary_id";
+      div.className = "bottom_right";
+      var that = this;
+      chrome.storage.local.get(null, function(items) {
+         lastSet = new Date(items['last_set']);
+
+         if(now - lastSet > 30000){
+            word = that.pickRandom();
+            that.current = word;
+         } else{
+            word = items['current'];
+         }
+
+         div.innerHTML = word;
+      });
+
+      this.clearUp();
+      document.body.appendChild(div);
+      return word;
+   });
+
+   this.__defineSetter__("current", function(currentWord){
+      var lastSet = new Date().toString();
+
+      var dataObj = {}
+      dataObj['current'] = currentWord;
+      dataObj['last_set'] = lastSet;
+      chrome.storage.local.set(dataObj, function() { /*...*/ });
+   });
+
+   this.clearUp = function(){
+      var previousElement = document.getElementById('vocabulary_ordinary_id');
+      if(previousElement){
+         previousElement.parentNode.removeChild(previousElement);
+      }
+   }
 }
 
-Wortschatz.words =
+Wortschatz.prototype.words =
   ["ärgerlich;desagradable, molesto, enfadado;adjetivo",
    "begeistert;entusiasmado;adjetivo",
    "bunt;multicolor, variado;adjetivo",
