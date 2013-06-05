@@ -1,10 +1,11 @@
 # git rev-parse --short HEAD
 # git rev-parse HEAD
-
+# git log -1 --format="%s"`}
 js = <<-JS
 // Created at #{Time.now.strftime("%d. %B, %H:%M Uhr")}
 //
-// #{`git log -1 --format="%s"`}// #{`git log -1 --format="%H"`}//
+#{`git log -1 HEAD --format=short | ruby -e 'puts ARGF.lines.select{ ARGF.lineno > 3 }.map{ |k| "//" + k } '`}//
+//    #{`git log -1 --format="%H"`}//
 function Wortschatz(){
    this.pickRandom = function(){
       var selected = this.words[Math.floor(Math.random()*this.words.length)];
