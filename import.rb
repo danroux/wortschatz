@@ -56,7 +56,7 @@ function Wortschatz(){
 }
 JS
 
-files_to_load = ["adjektive", "verben"]
+files_to_load = Dir["files/**"]
 File.open("wortschatz.js", "w") do |file|
 	file.puts js
 	file.puts
