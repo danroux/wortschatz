@@ -31,11 +31,16 @@ function Wortschatz(){
             word = items['current'];
          }
 
+         if(document.getElementsByClassName("alertify-log").length < 1){
+            alertify.log(word, "", 0);
+         }
+
          div.innerHTML = word;
       });
 
       this.clearUp();
-      document.body.appendChild(div);
+      // document.body.appendChild(div);
+
       return word;
    });
 
@@ -68,7 +73,9 @@ File.open("wortschatz.js", "w") do |file|
 		count = %x{wc -l #{fname}}.split.first.to_i
 		source_file.lines.each_with_index do |a, i|
 			next if a.start_with?("#")
-			str = "\"#{a.strip}\""
+         a.strip!
+         a += ";#{fname.split("/").last}"
+			str = "\"#{a}\""
 			str = " " * 3 + str if !(findex.zero? && i == 1)
 			unless findex+1 == files_to_load.size && i == count
 				str << ",\n"
