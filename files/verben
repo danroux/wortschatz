@@ -75,6 +75,24 @@ schenken;regalar, ahorrarse algo
 weggehen;irse, (algo)desaparece
 werfen;lanzar
 zusammenleben;vivir juntos, vivir con alguien
+# Kapitel 24
+an|reden<redet an, redete an, hat angeredet>;hablar a, dirigir la palabra;Akk;Die meisten US-Bürger lehnen es nicht ab, dass ich sie mit ihren Vornamen anrede
+an|sprechen<spricht an, sprach an, hat angesprochen>;Akk;reaccionar a, mencionar, abordar, dirigirse;Ich wäre überrascht, wenn sie mich darum bitten würden, eine Rede zu halten
+auf|halten<hält auf, hielt auf, hat aufgehalten>;Akk;impedir, evitar, parar, obstruir;Niemand kann mich aufhalten!
+sich auf|halten<hält auf, hielt auf, hat aufgehalten>;quedarse, encontrarse;Akk;Das Wetter war leidlich, sie wollten sich unten im Hof aufhalten;Sie dürfen sich hier nicht aufhalten. Dies ist Privatbesitz
+sich bedanken<bedankt sich, bedankte sich, hat sich bedankt>;agradecer;bei + Dat, für + Akk;Hast du schon bei Simone und Mario für das tolle Geschenk bedankt?
+sich bedienen<bedient, hat bedient>;atender, servir;Akk;werden Sie schon bedient?;Der Ober bedient den Gast
+besitzen<besitzt, hat besessen>;poseer, tener;Akk;Seit kurzem besitzt sie einen Sportwagen
+betrachten<betrachtet, betrachtete, hat betrachtet>;contemplar, mirar, observar, considerar;Akk;Oben auf dem Wolkenkratzer kann man die Stadt gut betrachten
+bewerten<bewertet, bewertete, hat bewertet>;evaluar, valorar, calificar;Akk;Bitte bewerten Sie auf einer Skala von eins bis zehn Ihr Niveau in den folgenden Sprachen
+fliehen<flieht, floh, ist geflohen>;huir, correrse, escaparse;Sie versuchten zu fliehen
+husten<hustet, hustete, hat gehustet>;toser;Ich habe einen trockenen Husten
+küssen<küsst, küsste, hat geküsst>;besar;Akk;Ich möchte dich küssen
+schmecken<schmeckt, schmeckte, hat geschmeckt>;saber a, tener sabor;Die Hamburger hier schmecken besser als in dem anderen Laden
+stören< stört, störte, hat gestört>;molestar, incomodar;Akk;Stör ihn bitte nicht! Er muss sich konzentrieren
+verlangen<verlangt, verlangte, hat verlangt>;exigir, pedir, solicitar;(Akk);Ich werde alles tun, was Sie von mir verlangen;Nicht alle Verben verlangen ein Objekt
+weg|werfen<wirft weg, warf weg, hat weggeworfen>;tirar, botar;Akk;Meine Frau sagte mir, ich solle diesen alten Hut wegwerfen
+widersprechen<widerspricht, widersprach, hat widersprochen>;contradecir, llear la contra;Dat;Der junge widerspricht seinen Eltern ständig
 # Verben mit Dativ und Akkusativ Objekt
 ab|nehmen<nimmt ab, hat abgenommen>;adelgazar, disminuir, descolgar, recoger, amputar;Dat + Akk; Ich nehme ihr den Koffer ab
 ab|trocken<trocknet ab, abgetrocknet>;secar(se);Akk;Kannst du bitte mal das Geschir abtrocknen?
@@ -102,7 +120,7 @@ bauen;construir, edificar, hacer;Akk;Der Architekt baut ein Haus für seine Kund
 beachten<beachtet, hat beachtet>;atender, prestar atención, tener en cuenta;Akk;Hast du das Verfallsdatum auf dem Jogurt beachtet?
 beantragen<beantragt, hat beantragt>;solicitar, pedir;Akk;Er beantragt eine Aufenthaltserlaubnis
 beantworten<beantwortet, hat beantwortet>;responder, contestar;(Dat +)Akk;Beantworte (mir) bitte die Frage!
-bedienen<bedient, hat bedient>;atender, servir;Akk;werder Sie schon bedient?;Der Ober bedient den Gast
+
 begegnen<begegnet, ist begegnet>;encontrarse con alguien/algo, suceder, pasar;Dat;Wir sind ihm im Park begegnet
 beginnen<beginnt, hat begonnen>;comenzar, empezar;Akk;Wann hast du den Klavierunterricht begonnen?
 begründen<begründet, hat begründet>;justificar, basar en;Akk;wie willst du das begrunden?;Er konnte seine Entscheidung nicht begründen
@@ -115,8 +133,10 @@ beraten<berät, hat beraten>;aconsejar, asesorar, discutir;Akk;Der Experte berä
 berücksichtigen<berücksichtigt, hat berücksichtigt>;considerar, tener en cuenta;Akk;Bei ihren Plänen berücksichtigt sie ihn nur wenig
 beruhigen<beruhigt, hat beruhigt>;tranquilizar(se), calmar(se);Akk;Die Mutter beruhigt ihr weinendes Kind
 besichtigen<besichtigt, hat besichtigt>;visitar, examinar, inspeccionar, reconocer;Akk;Die Touristen besichtigen zuerst den Dom
-besitzen<besitzt, hat besessen>;poseer, tener;Seit kurzem besitzt sie einen Sportwagen
+
 bestimmen<bestimmt, hat bestimmt>;decidir, mandar, determinar, fijar;Akk;Er bestimmt die Pläne für den nächsten Tag;hier bestimme ich!;du hast hier nichts zu bestimmen
 besuchen<besucht, hat besucht>;visitar, ir a ver, asistir, frecuentar;Akk;Die Studenten besuchen ihren kranken Komilitonen
 betrügen<betrügt, hat betrogen>;estafar, engañar(se), sentirse decepcionado;Akk;Der Händler betrügt seinen Kunden nie
-beweisen<beweist, hat bewiesen>;demostrar, probar, presentar pruebas;(Dat +) Akk;Beweis (mir) deine Unschuld!
+beweisen<beweist, bezahlte, hat bewiesen>;demostrar, probar, presentar pruebas;(Dat +) Akk;Beweis (mir) deine Unschuld!
+bezahlen<bezahlt, hat bezahlt>;pagar;Akk;Der Gast bezahlt den Kaffee
+bieten;<bietet, bot, hat geboten>;ofrecer, presentar;(Dat +) Akk;Dieses Hotel bietet (uns) den größten Luxus;diese Kleinstadt hat nichts zu bieten

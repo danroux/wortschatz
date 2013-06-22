@@ -24,7 +24,7 @@ function Wortschatz(){
       chrome.storage.local.get(null, function(items) {
          lastSet = new Date(items['last_set']);
 
-         if(now - lastSet > 300000){
+         if(now - lastSet > 900000){
             word = that.pickRandom();
             that.current = word;
          } else{
