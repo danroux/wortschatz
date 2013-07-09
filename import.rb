@@ -6,66 +6,11 @@ js = <<-JS
 //
 #{`git log -1 HEAD --format=short | ruby -e 'puts ARGF.lines.select{ ARGF.lineno > 3 }.map{ |k| "//" + k } '`}//
 //    #{`git log -1 --format="%H"`}//
-function Wortschatz(){
-   this.pickRandom = function(){
-      var selected = this.words[Math.floor(Math.random()*this.words.length)];
-      selected = selected.split(";").join(" | ");
-      return selected;
-   };
-
-   this.__defineGetter__("current", function(){
-      var now = new Date();
-      var word;
-      var lastSetExt;
-      var div = document.createElement("div");
-      div.id = "vocabulary_ordinary_id";
-      div.className = "bottom_right";
-      var that = this;
-      chrome.storage.local.get(null, function(items) {
-         lastSet = new Date(items['last_set']);
-
-         if(now - lastSet > 900000){
-            word = that.pickRandom();
-            that.current = word;
-         } else{
-            word = items['current'];
-         }
-
-         if(document.getElementsByClassName("alertify-log").length < 1){
-            alertify.log(word, "", 0);
-         }
-
-         div.innerHTML = word;
-      });
-
-      this.clearUp();
-      // document.body.appendChild(div);
-
-      return word;
-   });
-
-   this.__defineSetter__("current", function(currentWord){
-      var lastSet = new Date().toString();
-
-      var dataObj = {}
-      dataObj['current'] = currentWord;
-      dataObj['last_set'] = lastSet;
-      chrome.storage.local.set(dataObj, function() { /*...*/ });
-   });
-
-   this.clearUp = function(){
-      var previousElement = document.getElementById('vocabulary_ordinary_id');
-      if(previousElement){
-         previousElement.parentNode.removeChild(previousElement);
-      }
-   }
-}
 JS
 
 files_to_load = Dir["files/**"]
-File.open("wortschatz.js", "w") do |file|
+File.open("words.js", "w") do |file|
 	file.puts js
-	file.puts
 	file.puts "Wortschatz.prototype.words ="
 	file.print " " * 2 + "["
 	files_to_load.each_with_index do |fname, findex|
@@ -89,4 +34,4 @@ File.open("wortschatz.js", "w") do |file|
 	end
 end
 
-`mv wortschatz.js ../wortschatz_extension`
+`mv words.js ../wortschatz_extension`
