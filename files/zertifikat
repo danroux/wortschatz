@@ -3,7 +3,7 @@ das Benehmen;Los modales;das gute Benehmen;das schlechte Benehmen
 die Umgangsformen;Las maneras;auf gute Umgangsformen;auf gute Umgangsformen achten
 sich benehmen<benimmt sich, benahm sich, hat sich benommen;comportarse;sich gut benehmen;sich zu benehmen wissen
 höflich;cortés;ein höflicher junger Mann;sehr höflich sein;unhöflich sein
-liebenswürdig;amable;ein liebenswürdiger Herr;"Bitte seien Sie so liebenswürdig"
+liebenswürdig;amable;ein liebenswürdiger Herr;Bitte seien Sie so liebenswürdig
 freundlich;amable;das ist sehr freundlich
 nett;gentil;Das ist sehr nett von Ihnen;eine nette junge Dame
 herzlich;cordial(mente);jdn. herzlich begrüßen
@@ -55,3 +55,44 @@ langsam;lento;langsam sein
 faul;vago;ein fauler Schüler;Sie ist faul
 nachlässig;negligente;nachlässig arbeiten;nur nachlässig kontrollieren
 passiv;pasivo;sich passiv verhalten
+# 123 Rohstoffe
+der Rohstoff, -e;Materia prima;die Rohstoffe importieren;die Rohstoffe verarbeiten
+das Material, -e;Material;die Materialkosten;der Materialfehler
+das Metall, -e;Metal;die Metallindustrie
+das Eisen;Hierro;die Eisenindustrie
+rosten;oxidarse;Das Eisen rostet;verrosten
+der Stahl;Acero;die Stahlindustrie;der Stahlbeton
+das Kupfer;Cobre;der Kupferdraht;das Kupferblech
+das Blech, -e;Chapa, Lata;die Blechdose;dünnes Blech
+der Draht, -¨e;Alambre;der elektrischedraht;der Kupferdraht
+der Kunststoff, -e;Plástico;aus Kunststoff
+das Plastik;Plástico;ein Eimer aus Plastik
+die Chemie;Química;die Chemieindustrie
+chemisch;químico;die chemischen Produkte
+künstlich;artificial;das künstliche Licht;die künstliche Ernährung
+natürlich;natural;die natürlichen Rohstoffe
+# 124 Energie
+die Energie, -e;Energía;der Energiebedarf;die Energieversorgung;alternative Energien
+die Kohle, -n;Carbón;die Steinkohle;die Braunkohle;mit Kohle heizen
+das Öl, -e;Aceite, Petróleo;das Erdöl;das Heizöl;Das Auto verbraucht viel Öl
+das Gas, -e;Gas;das Erdgas
+das Atom, -e;Átomo;die Atomenergie
+Kern-;nuclear;die Kernenergie;das Kernkraftwerk
+der Strom;Electricidad, Corriente;der elektrische Strom;der Stromverbrauch
+elektrisch;eléctrico;die elektrischen Haushaltsgeräte
+Elektro-;electro-, electrónico;der Elektroingenieur;das Elektrogeschaft
+die Leitung, -en;Conducción;die elektrische Leitung
+der Stecker, -;Enchufe(macho);den Stecker in die Steckdose stecken
+die Steckdose, -n;Enchufe(hembra);die Steckdose in der Wand
+die Lampe, -n;Lámpara;das Lampenlicht;die Taschenlicht
+die Glühbirne, -n;Bombilla;eine neue Glühbirne in die Lampe schrauben
+die Birne, -n;Bombilla;Die Birne ist kaputt
+der Schalter, -;Interruptor;der Lichtschalter
+anmachen;encender;das Licht anmachen;die Heizung anmachen
+an sein;estar encendido;Das Licht ist an
+aus sein;estar apagado;Die Heizung ist aus
+verbrauchen;consumir;viel Strom verbrauchen;wenig Benzin verbrauchen
+ausmachen;apagar;das Licht ausmachen;die Maschine ausmachen
+ausschalten;desconectar;die Lampe ausschalten
+ausgehen;irse;Das Licht ist ausgegangen
+die Batterie, -n;Pila;eine Batterie für die Taschenlampe
